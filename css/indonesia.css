@@ -1,0 +1,96 @@
+body {
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.5s ease; /* Smooth fade */
+  padding-left: 50px;
+}
+
+body.fade-in {
+  opacity: 1; /* Fade in */
+}
+
+body.fade-out {
+  opacity: 0; /* Fade out when leaving */
+}
+
+.page-logo {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;           /* space between button and title */
+  margin-top: 20px;
+}
+
+.back-button {
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid;
+  width: 100px;
+  background-color: black;
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px; 
+}
+
+.page-link {
+  
+  text-decoration: none; /* Removes the underline */
+  color: inherit;        /* Keeps the text color from the div */
+  
+}
+
+.site-head {
+  padding-top: 120px
+}
+
+.section-title {
+  
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+
+.container-row {
+  display: flex;
+  gap: 30px; /* space between the two containers */
+  flex-wrap: wrap; /* allows them to wrap on small screens */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 150px;
+}
+
+
+.talent-image {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.talent-image:hover {
+  transform: scale(1.05); /* slightly zoom in */
+}
+
+.description-holder {
+  text-align: center;
+}
+
+.talent-enname {
+  font-size: 17px;
+}
+
+.talent-jpname {
+  font-size: 12px;
+}

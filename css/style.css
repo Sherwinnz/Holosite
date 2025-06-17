@@ -1,0 +1,85 @@
+body {
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.5s ease; /* Smooth fade */
+  
+}
+
+body.fade-in {
+  opacity: 1; /* Fade in */
+}
+
+body.fade-out {
+  opacity: 0; /* Fade out when leaving */
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+}
+
+h1 {
+  text-align: center;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.image-row img {
+  width: 40px;   /* optional size */
+  height: auto;
+  margin: 20px;
+}
+
+.Twitter {
+  border-radius: 20px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 170px 170px;
+  justify-content: center;
+}
+
+.page-link {
+  
+  text-decoration: none; /* Removes the underline */
+  color: inherit;        /* Keeps the text color from the div */
+  
+}
+
+#box-1, #box-2, #box-3, #box-4 {
+ border: 1px solid;
+ text-align: center;
+ padding: 10px;
+ margin-right: 10px;
+ margin-bottom: 5px;
+ background-color: rgb(62, 59, 59);
+ color: white;
+ cursor: pointer;
+}
+
+#box-1:hover, #box-2:hover, #box-3:hover, #box-4:hover, #cont:hover {
+  background-color: white;
+  color: black;
+  transition: all .2s ease, visibility 0s;
+}
+
+#Contact-box {
+  display: flex;
+  justify-content: center;
+}
+
+#cont {
+  margin-top: 10px;
+  border: 1px solid;
+  padding: 15px;
+  background-color: rgb(62, 59, 59);
+  color: white;
+  cursor: pointer;
+}
+

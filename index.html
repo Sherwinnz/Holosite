@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hololive</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+  
+    <div id="homepage-logo"> 
+      <img src="images/Hololive logo-only.png" 
+      alt="Hololive logo">
+    </div>
+    
+    <h1>HOLOLIVE</h1>
+      <div class="image-row">
+        <a href="https://x.com/hololivetv" target="_blank">
+          <img class="Twitter" src="Icons/Twitter.png" alt="Twitter-logo">
+        </a>
+        <a href="https://www.youtube.com/@hololive" target="_blank">
+          <img src="icons/Youtube.png" alt="Youtube-logo">
+       </a>
+      </div>
+    <div id="container">
+      <a class="page-link" href="Hololive-Production.html">
+       <div id="box-1">Hololive Production</div>
+      </a>
+      <a class="page-link" href="Hololive-English.html">
+        <div id="box-2">Hololive Enlish</div>
+      </a>
+      <a class="page-link" href="Hololive-Indonesia.html">
+        <div id="box-3">Hololive Indonesia</div>
+      </a>
+      <a class="page-link" href="Hololive-Dev_is.html">
+        <div id="box-4">Hololive Dev_is</div>
+      </a>
+    </div>
+
+    <div id="Contact-box">
+      <a class="page-link"  href="contact.html">
+       <div id="cont">Contact</div>
+      </a>
+    </div>
+
+
+    <script>
+      // Fade in on page load
+      window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('fade-in');
+      });
+    
+      // Fade out on link click before navigating
+      document.querySelectorAll('a.page-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const href = this.getAttribute('href');
+    
+          // Remove fade-in class if it exists
+          document.body.classList.remove('fade-in');
+          document.body.classList.add('fade-out');
+    
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500); // Match transition duration
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hololive English</title>
+  <link rel="stylesheet" href="css/english.css">
+</head>
+<body>
+
+  <img class="page-logo" src="images/Hololive_-indonesia-removebg-preview (1).png" alt="hololive-logo">
+
+  <div class="top-row">
+    <a class="page-link" href="index.html">
+      <div>
+        <div class="back-button">BACK &lt;</div>
+      </div>  
+    </a>  
+  </div>
+
+  
+  <div class="site-head"></div>
+  <p class="section-title">Area 15</p>
+
+  <div class="container-row">
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/ayunda-risu/">
+        <img class="talent-image" src="Thumb-id/Ayunda-Risu_list_thumb.png">
+      </a> 
+      <div class="talent-enname">Ayunda Risu</div>
+      <div class="talent-jpname">アユンダ・リス</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/moona-hoshinova/">
+       <img class="talent-image" src="Thumb-id/Moona-Hoshinova_list_thumb.png">
+      </a>
+      <div class="talent-enname">Moona Hoshinova</div>
+      <div class="talent-jpname">ムーナ・ホシノヴァ</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/airani-iofifteen/">
+        <img class="talent-image" src="Thumb-id/Airani-Iofifteen_list_thumb.png">
+      </a>
+      <div class="talent-enname">Airani Iofifteen</div>
+      <div class="talent-jpname">アイラニ・イオフィフティーン</div>
+    </div>
+  </div>
+
+   <p class="section-title">Holoro</p>
+
+  <div class="container-row">
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/kureiji-ollie/">
+        <img class="talent-image" src="Thumb-id/Kureiji-Ollie_list_thumb.png">
+      </a> 
+      <div class="talent-enname">Kureiji Ollie</div>
+      <div class="talent-jpname">クレイジー・オリー</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/anya-melfissa/">
+       <img class="talent-image" src="Thumb-id/Anya-Melfissa_list_thumb.png">
+      </a>
+      <div class="talent-enname">Anya Melfissa</div>
+      <div class="talent-jpname">アーニャ・メルフィッサ</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/pavolia-reine/">
+        <img class="talent-image" src="Thumb-id/Pavolia-Reine_list_thumb.png">
+      </a>
+      <div class="talent-enname">Pavolia Reine</div>
+      <div class="talent-jpname">パヴォリア・レイネ</div>
+    </div>
+  </div>
+
+  <p class="section-title">Holoh3ro</p>
+
+  <div class="container-row">
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/vestia-zeta/">
+        <img class="talent-image" src="Thumb-id/Vestia-Zeta_list_thumb.png">
+      </a> 
+      <div class="talent-enname">Vestia Zeta</div>
+      <div class="talent-jpname">ベスティア・ゼータ</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/kaela-kovalskia/">
+       <img class="talent-image" src="Thumb-id/Kaela-Kovalskia_list_thumb.png">
+      </a>
+      <div class="talent-enname">Kaela Kovalskia</div>
+      <div class="talent-jpname">カエラ・コヴァルスキア</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/kobo-kanaeru/">
+        <img class="talent-image" src="Thumb-id/Kobo-Kanaeru_list_thumb.png">
+      </a>
+      <div class="talent-enname">Kobo Kanauru</div>
+      <div class="talent-jpname">こぼ・かなえる</div>
+    </div>
+  </div>
+
+
+  
+  <script>
+    // Fade in on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('fade-in');
+    });
+  
+    // Fade out on link click before navigating
+    document.querySelectorAll('a.page-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+  
+        // Remove fade-in class if it exists
+        document.body.classList.remove('fade-in');
+        document.body.classList.add('fade-out');
+  
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500); // Match transition duration
+      });
+    });
+  </script>
+</body>
+</html>

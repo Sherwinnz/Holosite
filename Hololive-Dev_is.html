@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hololive English</title>
+  <link rel="stylesheet" href="css/Dev_is.css">
+</head>
+<body>
+
+  <img class="page-logo" src="images/Hololive_DEV_IS_logo-removebg-preview.png" alt="hololive-Dev_is-logo">
+
+  <div class="top-row">
+    <a class="page-link" href="index.html">
+      <div>
+        <div class="back-button">BACK &lt;</div>
+      </div>  
+    </a>  
+  </div>
+
+  
+  <div class="site-head"></div>
+  <p class="section-title">ReGloss</p>
+
+  <div class="container-row">
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/hiodoshi-ao/">
+        <img class="talent-image" src="thumbs-dev_is/Hiodoshi-Ao_list_thumb.png">
+      </a> 
+      <div class="talent-enname">Hiodoshi Ao</div>
+      <div class="talent-jpname">火威青</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/otonose-kanade/">
+       <img class="talent-image" src="thumbs-dev_is/Otonose-Kanade_list_thumb.png">
+      </a>
+      <div class="talent-enname">Otonose Kanade</div>
+      <div class="talent-jpname">音乃瀬奏</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/ichijou-ririka/">
+        <img class="talent-image" src="thumbs-dev_is/Ichijou-Ririka_list_thumb.png">
+      </a>
+      <div class="talent-enname">Ichijou Ririka</div>
+      <div class="talent-jpname">一条莉々華</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/juufuutei-raden/">
+        <img class="talent-image" src="thumbs-dev_is/Juufuutei-Raden_list_thumb.png">
+      </a>
+      <div class="talent-enname">Juufuutei Raden</div>
+      <div class="talent-jpname">儒烏風亭らでん</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/todoroki-hajime/">
+        <img class="talent-image" src="thumbs-dev_is/Todoroki-Hajime_list_thumb.png">
+      </a>
+      <div class="talent-enname">Todoroki Hajime</div>
+      <div class="talent-jpname">轟はじめ</div>
+    </div>
+  </div>
+
+   <p class="section-title">FlowGlow</p>
+
+  <div class="container-row">
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/isaki-riona/">
+        <img class="talent-image" src="thumbs-dev_is/Isaki-Riona_list_thumb.png">
+      </a> 
+      <div class="talent-enname">Isaki Riona</div>
+      <div class="talent-jpname">響咲リオナ</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/koganei-niko/">
+       <img class="talent-image" src="thumbs-dev_is/Koganei-Niko_list_thumb.png">
+      </a>
+      <div class="talent-enname">Koganei Niko</div>
+      <div class="talent-jpname">虎金妃笑虎</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/mizumiya-su/">
+        <img class="talent-image" src="thumbs-dev_is/Mizumiya-Su_list_thumb.png">
+      </a>
+      <div class="talent-enname">Mizumiya Su</div>
+      <div class="talent-jpname">水宮枢</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/rindo-chihaya/">
+        <img class="talent-image" src="thumbs-dev_is/Rindo-Chihaya_list_thumb.png">
+      </a>
+      <div class="talent-enname">Rindo Chihaya</div>
+      <div class="talent-jpname">輪堂千速</div>
+    </div>
+
+    <div class="container">
+      <a href="https://hololive.hololivepro.com/en/talents/kikirara-vivi/">
+        <img class="talent-image" src="thumbs-dev_is/Kikirara-Vivi_list_thumb.png">
+      </a>
+      <div class="talent-enname">Kikirara Vivi</div>
+      <div class="talent-jpname">綺々羅々ヴィヴィ</div>
+    </div>
+  </div>
+
+  
+  <script>
+    // Fade in on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('fade-in');
+    });
+  
+    // Fade out on link click before navigating
+    document.querySelectorAll('a.page-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+  
+        // Remove fade-in class if it exists
+        document.body.classList.remove('fade-in');
+        document.body.classList.add('fade-out');
+  
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500); // Match transition duration
+      });
+    });
+  </script>
+</body>
+</html>
